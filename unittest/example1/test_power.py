@@ -30,10 +30,10 @@ class TestPower(unittest.TestCase):
         self.assertEqual(power_num(0, 2), 0)
     # This gives a failure
     def test_for_zero_as_number_and_zero_power(self):
-        self.assertEqual(power_num(0, 0), 0)
+        self.assertEqual(power_num(0, 0), 1)
     # This gives an error
     def test_for_zero_as_number_and_negative_power(self):
-        with self.assertRaises(TypeError):
+        with self.assertRaises(ZeroDivisionError):
             power_num(0, -2)
 
 
