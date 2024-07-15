@@ -36,6 +36,10 @@ class TestPower(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             power_num(0, -2)
 
+    # New unit tests
+    def new_test_power_int(self):
+        self.assertEqual(power_num(10, 10), 100):
+            
 
 if __name__ == '__main__':
     unittest.main()
